@@ -5,41 +5,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="icon" href="./images/favicon.png">
+        <link rel="icon" href="./images/favicon.ico">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
         <title>&lt;Kyle Bowen &#47;&gt;</title>
         <link rel="stylesheet" href="./main.css">
     </head>
     <body>
-        <nav>
-            <h1 id="logo">
-                <span>
-                    <a href="/">&lt;KyleBowen &#47;&gt;</a>
-                </span>
-            </h1>
-            <ul class="desktop-nav">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="./assets/KyleBowen_WebDeveloperResume.pdf" target="_blank">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <ul class="nav hidden">
-                <li class="nav-item"><a href="#about">About</a></li>
-                <li class="nav-item"><a href="#skills">Skills</a></li>
-                <li class="nav-item"><a href="#projects">Projects</a></li>
-                <li class="nav-item"><a href="./assets/KyleBowen_WebDeveloperResume.pdf" target="_blank">Resume</a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-            </ul>
-            <div id="hamburger-menu">
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-                <div class="btn-line"></div>
-            </div>
-        </nav>
+        <header>
+            <nav>
+                <h1 id="logo">
+                    <span>
+                        <a href="/">&lt;KyleBowen &#47;&gt;</a>
+                    </span>
+                </h1>
+                <ul class="desktop-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="./assets/KyleBowen_WebDeveloperResume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav hidden">
+                    <li class="nav-item"><a href="#about">About</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="./assets/KyleBowen_WebDeveloperResume.pdf" target="_blank">Resume</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="hamburger-menu">
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                    <div class="btn-line"></div>
+                </div>
+            </nav>
+        </header>
         <main>
-            <section id="about">
+            <article id="about">
                 <i id="avatar"></i>
                 <div class="card-top"></div>
                 <div id="heading">
@@ -47,8 +49,8 @@
                         Hi, my name is Kyle!<br>I'm a web developer with a background in analytics and media production.
                     </h2>
                 </div>
-            </section>
-            <section id="bio">
+            </article>
+            <article id="bio">
                 <h2>About</h2>
                 <hr class="headline-underline">
                 <div class="bio-container">
@@ -63,7 +65,7 @@
                         <li>Watching Sandi Metz conference talks.</li>
                     </ul>
                 </div>
-            </section>
+            </article>
             <section id="skills">
                 <h2>Skills</h2>
                 <hr class="headline-underline">
@@ -100,23 +102,23 @@
                     </div>
                 </div>
             </section>
-            <section id="projects">
+            <article id="projects">
                 <h2>Projects</h2>
                 <hr class="headline-underline">
                 <div class="projects-container">
-                    <div class="project-card">
+                    <article class="project-card">
                         <h3 class="project-name">What's the Story?</h3>
                         <a href="https://whats-the-story.netlify.com/" target="_blank">
                             <img src="./images/whats-the-story-homepage.png" alt="What's the Story? screenshot">
                         </a>
-                        <div class="project-information">
+                        <section class="project-information">
                             <a href="https://whats-the-story.netlify.com/" target="_blank" class="project-button">Live</a>
                             <a href="https://github.com/thinkful-ei22/kyle-story-game-client" target="_blank" class="project-button">GitHub</a>
                             <br>
                             <p><strong>What's the Story?</strong> is a hilarious real-time multiplayer game that's best described as a cross between <em>Mad Libs</em> and <em>Telephone</em> where players create collaborative stories written one sentence at a time. <strong>The Twist:</strong> Each player can only see the latest sentence of each story!</p>
-                        </div>
+                        </section>
                         <h3 class="made-with">Made With:</h3>
-                        <div class="tech-used">
+                        <section class="tech-used">
                             <span class="tech-info">
                                 <i class="devicon-react-original colored"></i>
                                 <h3 class="tech-header">React</h3>
@@ -141,21 +143,21 @@
                                 <i class="devicon-mongodb-plain colored"></i>
                                 <h3 class="tech-header">MongoDB</h3>
                             </span>
-                        </div>
-                    </div>
-                    <div class="project-card">
+                        </section>
+                    </article>
+                    <article class="project-card">
                         <h3 class="project-name">Privet!</h3>
                         <a href="https://privet-hello.herokuapp.com/" target="_blank">
                             <img src="./images/privet-homepage.png" alt="Privet! (hello) homepage screenshot">
                         </a>
-                        <div class="project-information">
+                        <section class="project-information">
                             <a href="https://privet-hello.herokuapp.com/" target="_blank" class="project-button">Live</a>
                             <a href="https://github.com/thinkful-ei22/Privet-client-DanKyle" target="_blank" class="project-button">GitHub</a>
                             <br>
                             <p><strong>Privet!</strong> is an app designed to help learn basic Russian words using a Spaced-Repetition algorithm to speed up retention. Words answered correctly are shown less frequently. Words answered incorrectly will receive more opportunities for review.</p>
-                        </div>
+                        </section>
                         <h3 class="made-with">Made With:</h3>
-                        <div class="tech-used">
+                        <section class="tech-used">
                             <span class="tech-info">
                                 <i class="devicon-react-original colored"></i>
                                 <h3 class="tech-header">React</h3>
@@ -180,21 +182,21 @@
                                 <i class="devicon-mocha-plain colored"></i>
                                 <h3 class="tech-header">Mocha</h3>
                             </span>
-                        </div>
-                    </div>
-                    <div class="project-card">
+                        </section>
+                    </article>
+                    <article class="project-card">
                         <h3 class="project-name">ShaveReducer</h3>
                         <a href="https://hetokibo-shaving-client.herokuapp.com/" target="_blank">
                             <img src="./images/shavereducer-homepage.png" alt="ShaveReducer homepage screenshot">
                         </a>
-                        <div class="project-information">
+                        <section class="project-information">
                             <a href="https://hetokibo-shaving-client.herokuapp.com/" target="_blank" class="project-button">Live</a>
                             <a href="https://github.com/thinkful-ei22/shaving-tracker-client" target="_blank" class="project-button">GitHub</a>
                             <br>
                             <p><strong>ShaveReducer</strong> is an app for wetshaving enthusiasts to track their shaves in an effort to find the products and combinations that will give them the best shave. Because even though you shave like it's 1920, you should be able to track results like it's 2020.</p>
-                        </div>
+                        </section>
                         <h3 class="made-with">Made With:</h3>
-                        <div class="tech-used">
+                        <section class="tech-used">
                             <span class="tech-info">
                                 <i class="devicon-react-original colored"></i>
                                 <h3 class="tech-header">React</h3>
@@ -219,10 +221,10 @@
                                 <i class="devicon-mocha-plain colored"></i>
                                 <h3 class="tech-header">Mocha</h3>
                             </span>
-                        </div>
-                    </div>
+                        </section>
+                    </article>
                 </div>
-            </section>
+            </article>
             <section id="contact">
                 <h2>Contact</h2>
                 <hr class="headline-underline">

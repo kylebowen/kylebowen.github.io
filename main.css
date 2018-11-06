@@ -420,13 +420,19 @@ main section hr {
 
 #about #heading {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%
+}
+
+@media (min-width: 375px) {
+    #about #heading {
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 620px) {
@@ -551,42 +557,6 @@ main section hr {
     align-items: center
 }
 
-#skills #hovering-laptop {
-    background-image: url(laptop.277df0dd.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 120px;
-    width: 120px;
-    display: inline-block;
-    overflow: visible;
-    position: relative;
-    top: -8rem;
-    left: 10rem;
-    margin: 0;
-    padding: 0
-}
-
-#skills #hovering-laptop.floating {
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out
-}
-
-@keyframes floating {
-    0% {
-        transform: translate(0)
-    }
-
-    65% {
-        transform: translateY(15px)
-    }
-
-    to {
-        transform: translate(0)
-    }
-}
-
 #skills h2 {
     font-size: 2.5rem;
     margin-bottom: 0
@@ -638,14 +608,14 @@ main section hr {
     margin: 0;
     padding: 0 0 0 1.5rem;
     display: grid;
-    grid-template-columns: repeat(3,auto);
+    grid-template-columns: repeat(2,auto);
     grid-row-gap: .5rem
 }
 
 #skills .skills-container ul.list-of-skills li {
     list-style: none;
     flex: 1;
-    font-size: 1.7rem
+    font-size: 1.5rem
 }
 
 .list-of-skills li:before {
@@ -657,6 +627,12 @@ main section hr {
     margin-right: 1rem;
     min-width: 5px;
     margin-bottom: 1px
+}
+
+@media (min-width: 640px) {
+    #skills .skills-container ul.list-of-skills {
+        grid-template-columns: repeat(3,1fr);
+    }
 }
 
 @media (min-width: 1200px) {
@@ -789,7 +765,7 @@ main section hr {
 }
 
 #projects .project-card .tech-used img {
-  height: 4rem;
+  width: 5rem;
   border: none;
   flex: 1;
 }
@@ -800,6 +776,23 @@ main section hr {
 }
 
 @media (min-width: 1200px) {
+    #projects h2 {
+        font-size:3.5rem
+    }
+
+    #projects .projects-container {
+        max-width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-column-gap: 2rem
+    }
+
+    #projects .projects-container .project-card {
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
     #projects h2 {
         font-size:3.5rem
     }
@@ -878,7 +871,6 @@ footer {
     width: 100%;
     margin-top: 1rem;
     display: flex;
-    /* border-top: 2px solid #1bc29e; */
     color: #fff;
     background-color: hsla(227, 56%, 63%, 1);
     justify-content: center;
